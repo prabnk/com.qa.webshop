@@ -15,7 +15,8 @@ public class HomePage extends DriverScript
 	@FindBy(xpath="//img[@alt='Tricentis Demo Web Shop']") WebElement webshopImg;
 	@FindBy(xpath="(//a[contains(text(),'Books')])[1]") WebElement booksMenu;
 	@FindBy(linkText = "Log out")WebElement LogoutLink;
-	
+	@FindBy(xpath ="(//a[@class='account'])[1]") WebElement userLoggedin;
+		
 	//**********************Page Initialization********************************************//
 	
 	public HomePage()
@@ -24,6 +25,11 @@ public class HomePage extends DriverScript
 	}
 
 	//***************************pageMethods/Actions**************
+	
+	public String getuserLoggedin()
+	{
+		return userLoggedin.getText();
+	}
 	public void clickLogoutLink()
 	{
 		LogoutLink.click();
