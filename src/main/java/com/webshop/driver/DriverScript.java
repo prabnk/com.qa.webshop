@@ -11,6 +11,15 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+/*
+ * Name:DriverScript
+ * Description: This class manages the driver instance and also loads the properties file
+ * Developed By: Prabha
+ * Approved By:Shantosh
+ * Date Created/Modified:11/20/2023
+ */
+
+
 public class DriverScript {
 
 	public static WebDriver driver;

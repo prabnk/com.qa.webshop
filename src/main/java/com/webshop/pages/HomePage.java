@@ -25,6 +25,17 @@ public class HomePage extends DriverScript
 	}
 
 	//***************************pageMethods/Actions**************
+	public boolean isRegisterLinkDisplayed()
+	{
+		return registerLink.isDisplayed();
+	}
+	
+	
+	
+	public boolean isuserLoggedDisplayed()
+	{
+		return userLoggedin.isDisplayed();
+	}
 	
 	public String getuserLoggedin()
 	{

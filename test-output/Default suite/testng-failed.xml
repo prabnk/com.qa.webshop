@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.webshop.testcase.HomwPageTest">
+      <class name="com.webshop.testcase.RegisterPageTest">
         <methods>
-          <include name="testHomePageTitle"/>
-          <include name="testWebShopImageIsDisplayed"/>
+          <include name="setupReport"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="testRegisterPage"/>
         </methods>
-      </class> <!-- com.webshop.testcase.HomwPageTest -->
+      </class> <!-- com.webshop.testcase.RegisterPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
